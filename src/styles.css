@@ -17,14 +17,9 @@ a { color: inherit; text-decoration: none; }
 .brand span { display:block; font-size: 12px; color: var(--muted); margin-top: 2px; }
 .navLinks { display: flex; align-items: center; gap: 22px; font-size: 14px; }
 .navButton { background: var(--navy); color: white; padding: 10px 16px; border-radius: 999px; }
-.hero {
-  min-height: 82vh;
-  padding: 60px;
-  background: linear-gradient(135deg, #0f172a, #1e3a8a);
-  color: white;
-  display: flex;
-  align-items: center;
-}
+.navListBtn { display: inline-flex; align-items: center; gap: 7px; background: var(--gold); color: #121212; padding: 10px 18px; border-radius: 999px; font-weight: 800; font-size: 14px; transition: background .15s, transform .1s; }
+.navListBtn:hover { background: #e0a830; transform: translateY(-1px); }
+.hero { min-height: 82vh; padding: 60px; background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; display: flex; align-items: center; }
 .eyebrow { text-transform: uppercase; letter-spacing: .22em; font-size: 12px; font-weight: 800; color: var(--gold); }
 h1 { font-size: clamp(42px, 7vw, 82px); line-height: .94; margin: 12px 0 22px; max-width: 900px; }
 h2 { font-size: clamp(30px, 4vw, 52px); line-height: 1.03; margin: 8px 0 16px; }
@@ -38,6 +33,15 @@ h3 { font-size: 24px; margin: 0 0 10px; }
 .heroCard { padding: 34px; border-radius: 28px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); box-shadow: 0 20px 70px rgba(0,0,0,.25); }
 .heroCard p { color: #dce9fb; line-height: 1.6; }
 .heroIcon { color: var(--gold); margin-top: 30px; }
+.listEquipBtn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 999px; padding: 14px 24px; font-weight: 800; background: #ffffff; color: #121212; border: none; transition: background .15s, transform .1s; }
+.listEquipBtn:hover { background: #f0f4ff; transform: translateY(-1px); }
+.listEquipBtnLg { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px; padding: 18px 36px; font-weight: 800; font-size: 18px; background: var(--gold); color: #121212; border: none; transition: background .15s, transform .1s; margin-top: 10px; }
+.listEquipBtnLg:hover { background: #e0a830; transform: translateY(-2px); }
+.sellBanner { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; padding: 60px 6%; }
+.sellBannerInner { display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
+.sellBanner .eyebrow { color: var(--gold); }
+.sellBanner h2 { color: white; margin-bottom: 10px; }
+.sellBanner p { color: #dce9fb; line-height: 1.7; max-width: 560px; }
 .section { padding: 86px 6%; background: var(--white); }
 .sectionHeader { max-width: 800px; margin-bottom: 38px; }
 .sectionHeader p, .split p, .contact p { color: var(--muted); line-height: 1.7; }
@@ -62,4 +66,10 @@ ul { padding-left: 18px; color: var(--muted); line-height: 1.7; }
 .contact { padding: 76px 6%; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
 .contactCard { background: var(--light); padding: 30px; border-radius: 24px; display: grid; gap: 16px; }
 .contactCard a { display: flex; gap: 10px; align-items: center; font-weight: 800; }
-@media (max-width: 900px) { .hero, .split, .contact { grid-template-columns: 1fr; } .grid, .featureRow { grid-template-columns: 1fr; } .nav { align-items: flex-start; gap: 14px; flex-direction: column; } .navLinks { flex-wrap: wrap; } }
+@media (max-width: 900px) {
+  .hero, .split, .contact { grid-template-columns: 1fr; }
+  .grid, .featureRow { grid-template-columns: 1fr; }
+  .nav { align-items: flex-start; gap: 14px; flex-direction: column; }
+  .navLinks { flex-wrap: wrap; }
+  .sellBannerInner { flex-direction: column; align-items: flex-start; }
+}
