@@ -46,7 +46,7 @@ function App() {
           <a href="#inspections">Inspections</a>
           <a href="#sell">Sell</a>
           <a href="#contact" className="navButton">Contact</a>
-          <a href="/list-equipment.html" className="navListBtn">
+          <a href="/atems-equipment-listing.html" className="navListBtn">
             <ClipboardList size={16}/> List Your Equipment
           </a>
         </div>
@@ -61,7 +61,7 @@ function App() {
           </p>
           <div className="heroActions">
             <a href="#equipment" className="primary">Browse Equipment <ArrowRight size={18}/></a>
-            <a href="/list-equipment.html" className="listEquipBtn">
+            <a href="/atems-equipment-listing.html" className="listEquipBtn">
               <ClipboardList size={18}/> List Your Equipment
             </a>
             <a href="#sell" className="secondary">Learn More</a>
@@ -115,7 +115,7 @@ function App() {
             <h2>List your lift equipment today.</h2>
             <p>Submit your equipment details and our team will review your listing within 1-2 business days.</p>
           </div>
-          <a href="/list-equipment.html" className="listEquipBtnLg">
+          <a href="/atems-equipment-listing.html" className="listEquipBtnLg">
             <ClipboardList size={22}/> List Your Equipment
           </a>
         </div>
@@ -152,7 +152,7 @@ function App() {
             <div className="feature" key={item}><CheckCircle2 size={20}/>{item}</div>
           ))}
         </div>
-        <a href="/list-equipment.html" className="listEquipBtnLg">
+        <a href="/atems-equipment-listing.html" className="listEquipBtnLg">
           <ClipboardList size={20}/> List Your Equipment
         </a>
       </section>
