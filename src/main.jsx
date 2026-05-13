@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ShieldCheck, Wrench, MapPin, Phone, Mail, CheckCircle2, ArrowRight, BadgeCheck } from 'lucide-react';
+import { ShieldCheck, Wrench, MapPin, Phone, Mail, CheckCircle2, ArrowRight, BadgeCheck, ClipboardList } from 'lucide-react';
 import './styles.css';
 
 const equipment = [
@@ -46,6 +46,9 @@ function App() {
           <a href="#inspections">Inspections</a>
           <a href="#sell">Sell</a>
           <a href="#contact" className="navButton">Contact</a>
+          <a href="/list-equipment.html" className="navListBtn">
+            <ClipboardList size={16}/> List Your Equipment
+          </a>
         </div>
       </nav>
 
@@ -58,7 +61,10 @@ function App() {
           </p>
           <div className="heroActions">
             <a href="#equipment" className="primary">Browse Equipment <ArrowRight size={18}/></a>
-            <a href="#sell" className="secondary">List Your Equipment</a>
+            <a href="/list-equipment.html" className="listEquipBtn">
+              <ClipboardList size={18}/> List Your Equipment
+            </a>
+            <a href="#sell" className="secondary">Learn More</a>
           </div>
           <div className="trustRow">
             <span><CheckCircle2 size={18}/> Technician-informed listings</span>
@@ -102,6 +108,19 @@ function App() {
         </div>
       </section>
 
+      <section className="section sellBanner" id="sell-cta">
+        <div className="sellBannerInner">
+          <div>
+            <p className="eyebrow">Have Equipment to Sell?</p>
+            <h2>List your lift equipment today.</h2>
+            <p>Submit your equipment details and our team will review your listing within 1-2 business days.</p>
+          </div>
+          <a href="/list-equipment.html" className="listEquipBtnLg">
+            <ClipboardList size={22}/> List Your Equipment
+          </a>
+        </div>
+      </section>
+
       <section className="split" id="inspections">
         <div>
           <p className="eyebrow">Inspection Services</p>
@@ -133,7 +152,9 @@ function App() {
             <div className="feature" key={item}><CheckCircle2 size={20}/>{item}</div>
           ))}
         </div>
-        <a href="#contact" className="primary">Start a Seller Listing</a>
+        <a href="/list-equipment.html" className="listEquipBtnLg">
+          <ClipboardList size={20}/> List Your Equipment
+        </a>
       </section>
 
       <section className="contact" id="contact">
