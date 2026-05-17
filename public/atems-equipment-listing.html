@@ -339,7 +339,7 @@ footer strong{color:var(--gold-light)}
     btn.disabled=true;btn.textContent='Submitting\u2026';errBox.style.display='none';
     try{
       var data=new FormData(this);
-      var res=await fetch('https://formspree.io/f/xjgldvkj',{method:'POST',body:data,headers:{'Accept':'application/json'}});
+      var res=await fetch('/api/submit-listing',{method:'POST',body:data});
       if(res.ok){this.style.display='none';okBox.style.display='flex';okBox.scrollIntoView({behavior:'smooth',block:'nearest'});}
       else{throw new Error('error');}
     }catch(err){
